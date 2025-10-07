@@ -1,0 +1,34 @@
+version: "3.9"
+services:
+  cpp:
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.cpp
+    volumes:
+      - ../..:/workspace
+    working_dir: /workspace
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+
+  py: 
+    build: 
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.py
+    volumes:
+      - ../..:/workspace
+    working_dir: /workspace
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices: 
+            driver: nvidia
+            count: all
+            capabilities: [gpu]
