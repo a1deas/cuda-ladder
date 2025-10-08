@@ -1,4 +1,4 @@
-// project 01 - main.cu
+// project 01 - Vector Add - main.cu
 #include <cstdio>
 #include <vector>
 #include <cuda_runtime.h>

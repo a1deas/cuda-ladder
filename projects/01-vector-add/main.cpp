@@ -1,4 +1,4 @@
-// project 01 - main.cpp
+// project 01 - Vector Add - main.cpp
 #include <cstdio>
 #include <vector>
 #include <cassert>

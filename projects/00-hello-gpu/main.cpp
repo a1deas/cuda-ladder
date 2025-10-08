@@ -1,4 +1,4 @@
-// project 00 - main.cpp
+// project 00 - Hello, GPU - main.cpp
 #include <cstdio>
 int main() {
     printf("Hello, CPU!\n");

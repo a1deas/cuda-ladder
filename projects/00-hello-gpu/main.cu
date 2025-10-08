@@ -1,4 +1,4 @@
-// project 00 - main.cu
+// project 00 - Hello, GPU - main.cu
 #include <cstdio>
 #include <cuda_runtime.h>
 
