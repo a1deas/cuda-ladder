@@ -2,6 +2,16 @@
 #include <cstdio>
 #include <cuda_runtime.h>
 
+// Macro to check errors
+#define CUDA_OK(stmt) do { \
+  cudaError_t err = (stmt); \
+  if (err != cudaSuccess) { \
+    fprintf(stderr, "CUDA error %s at %s:%d\n", \
+      cudaGetErrorString(err), __FILE__, __LINE__); \
+    return 1; \
+  } \
+} while(0)
+
 __global__ void hello() {
     if (threadIdx.x == 0 && blockIdx.x == 0)
         printf("Hello, GPU!\n");
@@ -12,11 +22,9 @@ __global__ void kernel_hello() {
 }
 
 int main() {
+    // Launch kernel
     kernel_hello<<<3, 3>>>();
-    cudaError_t err = cudaDeviceSynchronize();
-    if (err != cudaSuccess) {
-        fprintf(stderr, "CUDA Error: %s\n", cudaGetErrorString(err));
-        return 1;
-    }
+    CUDA_OK(cudaGetLastError());
+    CUDA_OK(cudaDeviceSynchronize());
     return 0;
 }

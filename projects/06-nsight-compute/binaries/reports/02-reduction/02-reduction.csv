@@ -1,0 +1,4 @@
+﻿ID,Estimated Speedup [%],Function Name,Demangled Name,Duration [us],Runtime Improvement [us],Compute Throughput [%],Memory Throughput [%],# Registers [register/thread],Grid Size,Block Size [block]
+0,46.52,reduceAtomic,reduceAtomic..unsigned..,"772,74","359,49","5,51","6,38",16," 4096,    1,    1","  256,    1,    1"
+1,29.31,reduceShared,reduceShared..unsigned..,"85,06","24,93","87,37","87,37",16," 4096,    1,    1","  256,    1,    1"
+2,33.88,reduceWarp,reduceWarp..unsigned..,"59,84","20,27","66,12","66,12",18," 4096,    1,    1","  256,    1,    1"

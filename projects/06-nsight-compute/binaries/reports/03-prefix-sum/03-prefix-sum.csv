@@ -1,0 +1,4 @@
+﻿ID,Estimated Speedup [%],Function Name,Demangled Name,Duration [us],Runtime Improvement [us],Compute Throughput [%],Memory Throughput [%],# Registers [register/thread],Grid Size,Block Size [block]
+0,41.31,exclusiveBlockBlelloch,exclusiveBlockBlelloch..,"77,63","32,07","66,47","56,11",16," 2048,    1,    1","  256,    1,    1"
+1,96.15,exclusiveBlockBlelloch,exclusiveBlockBlelloch..,"10,43","10,03","1,08","0,74",16,"    1,    1,    1"," 1024,    1,    1"
+2,46.97,addBlockOffsets,addBlockOffsets..const..,"27,65","12,98","30,11","53,03",16," 2048,    1,    1","  256,    1,    1"
