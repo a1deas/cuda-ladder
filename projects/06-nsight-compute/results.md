@@ -1,5 +1,6 @@
 # Results - 06 - Nsight Compute
 
+- Computed 02-reduction.
 - Computed 03-prefix-sum.
 
 **02-Reduction**
