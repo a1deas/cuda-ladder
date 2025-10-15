@@ -8,9 +8,9 @@
 
 **03-Prefix-Sum**
 - 3 kernels: block Blelloch(first), Blelloch for block sums, addBlockOffsets.
-- First is balanced(~77 µs): compute~66%, memory~56%(probably no bottlenecks).
-- Block sums(~10 µs): low load (1 block × 1024).
-- addBlockOffsets: more memory-bound(~53%).
+- First is balanced(~77 ms): compute = ~66%, memory = ~56%(probably no bottlenecks).
+- Block sums(~10 ms): low load (1 block × 1024).
+- addBlockOffsets(~27 ms): more memory-bound(~53%).
 - CSV: see `binaries/reports/03-prefix-sum.csv`.
 
 **Notes:**
