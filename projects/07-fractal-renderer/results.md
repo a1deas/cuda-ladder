@@ -1,4 +1,4 @@
-# Results - 07 - Fractal Renderer
+# Results - 07 - Fractal nRederer
 **Conditions:**
 - WidthXHeight: 1920x1080 
 - Iterations: 500;
