@@ -1,6 +1,6 @@
 # Results - 08 - Streams 101 - CUDA Streams
 
-## 100M elements -- Light SAXPY Version
+## 100M elements — Light SAXPY Version
 **Conditions:**
 - 100M elements
 - **FLOP**: 2 FLOP per element
@@ -20,7 +20,7 @@ Validate: OK
 
 ---
 
-## 100M elements - Heavy K-times FMA-sum + SAXPY at the end
+## 100M elements — Heavy K-times FMA-sum + SAXPY at the end
 **Conditions:**
 - 100M elements.
 - 100 Iterations.
