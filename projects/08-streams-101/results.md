@@ -8,13 +8,17 @@
 - **Intensity** = ~0.17 FLOP/byte -> memory-bound task
 
 **CPU Output:**
+```text
 CPU Time: 32.07ms 
 Validate: OK
+```
 
 **GPU Output:**
+```text
 Streams: 4
 GPU Time: 165.00 ms
 Validate: OK
+```
 
 > The results are unexpectedly instructive: **GPU is slower than CPU** when the task is dominated by memory traffic with few computations.
 
@@ -28,22 +32,28 @@ Validate: OK
 - **Read/Write**: 8 bytes read + 4 bytes write = 12 traffic bytes
 - **Intersity** = ~16.7 FLOP/byte -> compute-bound task
 
+
 **CPU Output:**
+```text
 CPU Time: 7060.27 ms
 Validate: OK
+```
 
 **GPU Output:**
+```text
 Streams: 4
 GPU Time: 80.06 ms
 Throughput: 249.79 GFLOP/s
 PCIe: ~14.99 GB/s
 Validate: OK
-
+```
+```text
 Streams: 1
 GPU Time: 60.70 ms
 Throughput: 329.45 GFLOP/s
 PCIe: ~19.77 GB/s
 Validate: OK
+```
 
 > **1 stream outperforms 4** since in compute-bound mode GPU is fully busy with math and there's little left to overlap — extra streams just add overhead.
 
