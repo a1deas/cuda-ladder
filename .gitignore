@@ -26,6 +26,8 @@ venv/
 env/
 .env
 .env.*
+.vs 
+.vscode/
 
 *.qdrep
 *.ncu-rep
