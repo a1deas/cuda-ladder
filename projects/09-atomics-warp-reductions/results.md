@@ -36,7 +36,7 @@ Warp+Atomic:
 - GPU Sum: 100000000.0
 - GPU Time: 2.068000 ms
 
-**Notes:**
+## Notes:
 - Naive Atomic — is slow because every atomic is trying to access one memory address.
 - Warp + Atomic — every block processess local shared memory reductions and only one atomicAdd per block.
 - Performace: 
