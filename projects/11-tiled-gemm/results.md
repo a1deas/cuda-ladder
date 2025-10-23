@@ -10,15 +10,14 @@
 CPU: 63.998 ms
 FLOP: 4.2 GFLOP/s
 ```
-**GPU Output:**
-Naive:
+**GPU Naive GEMM Output:**
 ```text
 GPU: 4.004 ms
 FLOP: 67.0 GFLOP/s
 Max diff: 0.000046(4.6e-5)
 ```
 
-Tiled:
+**GPU Tiled GEMM Output:**
 ```text 
 GPU: 3.042 ms
 FLOP: 88.3 GFLOP/s
