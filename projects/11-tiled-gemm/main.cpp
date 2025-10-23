@@ -1,4 +1,4 @@
-// project 10 - Naive GEMM - main.cpp
+// project 11 - Tiled GEMM - main.cppd
 #include <cstdio> 
 #include <iostream>
 #include <chrono>
@@ -6,6 +6,7 @@
 #include <cmath>
 #include <random>
 
+// All the same as in 10 - Naive GEMM - main.cpp
 void gemmCPU(const float* A, const float* B, float* C, int M, int N, int K) {
     for (int i = 0; i < M; ++i) { 
         for (int j = 0; j < N; ++j) {
