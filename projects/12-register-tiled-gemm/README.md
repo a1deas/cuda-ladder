@@ -1,4 +1,4 @@
-# 13 - Register Tiled GEMM 
+# 12 - Register Tiled GEMM 
 
 **Goal:**
 Learn how to optimize GEMM with register tiling.
